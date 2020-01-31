@@ -77,11 +77,13 @@ public class FilterproductPOM {
 	
 	public void filterproduct(String productname ,String productprice) {
 		
+		//Entering product name and price to filter 
 		this.productname.sendKeys(productname);
 		this.productprice.sendKeys(productprice);
 		
 		this.filterbutton.click();
-		
+		 
+		//Verifying the model number of product and printing it 
 		String expected_product = "SKU-0031";
 		String actual = this.actualtext.getText();
 		

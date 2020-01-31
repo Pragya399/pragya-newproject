@@ -71,6 +71,7 @@ private WebDriver driver;
 		Assert.assertEquals(actual, expected);
 		System.out.println("Category page is displayed successfully");
 		
+		//Assert condition to verify the column heading of table
 		String actual2=this.categoryname.getText();
 		String expected2= "Category Name";
 		Assert.assertEquals(actual2, expected2);

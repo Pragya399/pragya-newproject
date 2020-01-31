@@ -43,6 +43,7 @@ private WebDriver driver;
 	@FindBy(xpath="//input[@type='checkbox' and @value='665']")
 	private WebElement checkbox;
 	
+	//Locator to find delete button
 	@FindBy(xpath="//button[@type='button']")
 	private WebElement delete;
 	
@@ -77,11 +78,14 @@ private WebDriver driver;
     }
 	
 	public void clickcheckbox() {
+		
+		//Scroll down the page 
 		Actions act=new Actions(driver);
 		act.sendKeys(Keys.PAGE_DOWN).perform();
 		act.sendKeys(Keys.PAGE_DOWN).perform();
 		this.page2.click();
 		act.sendKeys(Keys.PAGE_UP).perform();
+		//Selecting check box
 		String category_selected=this.checkbox.getText();
 		System.out.println("Element selected "+ category_selected );
 		
@@ -91,10 +95,9 @@ private WebDriver driver;
 	
 	public void clickdelete() throws InterruptedException {
 		this.delete.click();
+        
+		//Adding alert class to handle delete alert 
 		Alert alert=driver.switchTo().alert();
-		
-		Thread.sleep(2000);
-		
 		alert.dismiss();
 		
 	}

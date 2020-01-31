@@ -67,7 +67,9 @@ public class Clickcatlog {
 		loginadminPOM.sendPassword("admin@123");
 		loginadminPOM.clickLoginBtn(); 
 		screenShot.captureScreenShot("First");
+		//Clicking on catlog list 
 		loginadminPOM.mouseovercatlog();
+		
 		//clicking on categories and check if the page is displayed 
 		loginadminPOM.categories();
 		screenShot.captureScreenShot("category table");

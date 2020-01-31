@@ -59,9 +59,11 @@ public class Filterproduct {
 		loginadminPOM.productpage();
 		screenShot.captureScreenShot("Products list");
 		
+		//Entering details for filtering product
 		loginadminPOM.filterproduct("Integer vitae iaculis massa", "515");
 		screenShot.captureScreenShot( "Putting in filter details");
 		
+		System.out.println("upload to Git");
 		
 		
 		

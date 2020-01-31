@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-01-30T15:47:11 IST" name="Default suite" finished-at="2020-01-30T15:48:20 IST" duration-ms="68087">
+  <suite started-at="2020-01-30T22:01:16 IST" name="Default suite" finished-at="2020-01-30T22:01:58 IST" duration-ms="42190">
     <groups>
     </groups>
-    <test started-at="2020-01-30T15:47:11 IST" name="Default test" finished-at="2020-01-30T15:48:20 IST" duration-ms="68087">
-      <class name="com.training.sanity.tests.Earring">
-        <test-method is-config="true" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.Earring@5bfa9431]" started-at="2020-01-30T15:47:12 IST" name="setUpBeforeClass" finished-at="2020-01-30T15:47:12 IST" duration-ms="67" status="PASS">
+    <test started-at="2020-01-30T22:01:16 IST" name="Default test" finished-at="2020-01-30T22:01:58 IST" duration-ms="42190">
+      <class name="com.training.sanity.tests.Filterproduct">
+        <test-method is-config="true" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.Filterproduct@5bfa9431]" started-at="2020-01-30T22:01:16 IST" name="setUpBeforeClass" finished-at="2020-01-30T22:01:16 IST" duration-ms="95" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.training.sanity.tests.Earring@5bfa9431]" started-at="2020-01-30T15:47:12 IST" name="setUp" finished-at="2020-01-30T15:47:36 IST" duration-ms="24574" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.training.sanity.tests.Filterproduct@5bfa9431]" started-at="2020-01-30T22:01:16 IST" name="setUp" finished-at="2020-01-30T22:01:38 IST" duration-ms="22184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.Earring@5bfa9431]" started-at="2020-01-30T15:47:36 IST" name="validLoginTest" finished-at="2020-01-30T15:48:15 IST" duration-ms="38795" status="PASS">
+        <test-method signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.Filterproduct@5bfa9431]" started-at="2020-01-30T22:01:38 IST" name="validLoginTest" finished-at="2020-01-30T22:01:54 IST" duration-ms="15519" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.training.sanity.tests.Earring@5bfa9431]" started-at="2020-01-30T15:48:15 IST" name="tearDown" finished-at="2020-01-30T15:48:20 IST" duration-ms="4505" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.training.sanity.tests.Filterproduct@5bfa9431]" started-at="2020-01-30T22:01:54 IST" name="tearDown" finished-at="2020-01-30T22:01:58 IST" duration-ms="4094" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.Earring -->
+      </class> <!-- com.training.sanity.tests.Filterproduct -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

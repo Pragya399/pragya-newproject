@@ -63,6 +63,8 @@ public class Checkbox {
 		Thread.sleep(2000);
 		screenShot.captureScreenShot("Checked box");
 		
+		
+		//Clicking delete option 
 		loginadminPOM.clickdelete();
 		Thread.sleep(2000);
 		screenShot.captureScreenShot("Alert for delete ");
