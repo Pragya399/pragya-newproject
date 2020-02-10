@@ -11,17 +11,18 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.training.generics.ScreenShot;
-import com.training.pom.LoginPOM;
+import com.training.pom.MaddproductPOM;
+import com.training.pom.MfilterappPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
-import com.training.pom.*;
-public class LoginAdmin {
 
-	public WebDriver driver;
-	public String baseUrl;
-	public LoginadminPOM loginadminPOM;
-	public static Properties properties;
-	public ScreenShot screenShot;
+public class addproduct {
+	
+	private WebDriver driver;
+	private String baseUrl;
+	private MaddproductPOM loginadminPOM;
+	private static Properties properties;
+	private ScreenShot screenShot;
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws IOException {
@@ -33,7 +34,7 @@ public class LoginAdmin {
 	@BeforeMethod
 	public void setUp() throws Exception {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
-		loginadminPOM = new LoginadminPOM(driver); 
+		loginadminPOM = new MaddproductPOM(driver); 
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver); 
 		// open the browser 
@@ -47,10 +48,31 @@ public class LoginAdmin {
 	}
 	@Test
 	public void validLoginTest() {
+		//Actions act=new Actions(driver);
 		//.sleep(1000);
 		loginadminPOM.sendUserName("admin");
 		loginadminPOM.sendPassword("admin@123");
 		loginadminPOM.clickLoginBtn(); 
 		screenShot.captureScreenShot("First");
+		loginadminPOM.mouseovercatlog();
+		//clicking on product and check if the page is displayed 
+		loginadminPOM.productpage();
+		screenShot.captureScreenShot("Products list");
+		
+		//Adding product 
+		loginadminPOM.addproduct();
+		screenShot.captureScreenShot("add product link ");
+		
+		loginadminPOM.datatab();
+		screenShot.captureScreenShot("data tab");
+		
+		loginadminPOM.linkstab();
+		screenShot.captureScreenShot("link tab");
+		
+		
+		
 	}
+
+
+
 }
